@@ -4,66 +4,103 @@
 //want the images to have less height
 //want the list items to be spaced out and larger font
 
-nav{
-    display:flex;
-    justify-content: space-evenly;
+.container{
     width: 100%;
-    border-bottom: dashed 1px black;
-    align-items: center;
-    padding: 2% 0;
-    
-    @media @phone{
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 3%;
-        padding-top: 3%;
-    }
+    margin: 0 auto;
+    max-width:auto;
+
     
 
-    .links{
-    font-size: 1.8rem;
-    background-color:white;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 7%;
 
-    @media @phone{
-        flex-direction: column;
+    nav{
+        display:flex;
+        justify-content: space-evenly;
+        width: 100%;
+        // border-bottom: dashed 1px black;
         align-items: center;
-    }
-
-        a{
-            text-decoration: none;
-            color: @accent-color;
-            font-size: 1.8 rem;
-            padding: 0 10%;
-            font-family: "Raleway", sans-serif;
-            
+        padding: 2% 0;
+        
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 3%;
+            padding-top: 3%;
         }
-    
+        
 
-}
+        .links{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        width:30%;
+        
+
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+        }
+
+            a{
+                text-decoration: none;
+                color: @accent-color;
+                font-size: 1.8 rem;
+                padding: 0 auto;
+                font-family: "Raleway", sans-serif;
+                width:auto;
+                align-self: center;
+
+                &:hover{
+                  font-size: 120%;
+                  color: darken(@accent-color, 20%);  
+                }
+                
+            }
+        }  
+        
+        .log-in-btn{
+            background: @accent-color;
+            color: @background-color;
+            border-radius: 5px;
+            font-size: 1.8rem;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+
+            &:hover{
+                font-size: 2.3rem;
+            }
+        }
+
+    }
 
 header{
-//    max-width:1024px;
-   width:100%;
+   max-width:100%;
    margin: 0 auto;
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 //    height: 90vh;
 
-        h1{
-        color:@accent-color;
-        font-family:'Handlee', cursive;
-        font-size: 6rem;
-        text-shadow: 2px 2px @navy;
-        text-align: center;
-        padding: 3% auto;
-        }
+
     
     .hero-image{
     background-image: url(/assets/kitchen-counter.jpeg);
     background-size: cover;
-    width:100%;
-    height:100vh;
+    width:90%;
+    height:60vh;        
+    background-position: top;
+    
+        h1{
+            color:@accent-color;
+            background-color: white;
+            font-family:'Handlee', cursive;
+            font-size: 6rem;
+            text-shadow: 2px 2px @navy;
+            text-align: center;
+            padding: 5% auto;
+            margin-bottom: 15px;
+        }
     }
 }
 
@@ -77,20 +114,43 @@ header{
         display:flex;
         flex-wrap:wrap;
         justify-content: space-between;
-    }
-
-    .features-text{
-        width: 48%;
-    }
-
-    .features-image{
-        width: 48%;
+   
+        .features-text{
+            width: 48%;
+            font-size: 1.8rem;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
         
-
-        img{
-            border-radius: 10px;
-            height: 500px;
+            h2{
+                font-size: 2.5rem;
+                paddding: 2% 0;
+            }
+            
+        
+            ul{
+                li{
+                    padding: 2% 0;
+                }
+            }
         }
     }
+
+        .features-image{
+            width: 48%;
+            
+
+            img{
+                border-radius: 10px;
+                height: 400px;
+            }
+    }
+ }
 }
+
+            
+
+// Nest this properly when opportunity allows!
+.step{
+    margin-bottom: 30px;
 }
