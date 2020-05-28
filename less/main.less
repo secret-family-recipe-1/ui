@@ -38,6 +38,8 @@
         @media @phone{
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            margin: 20px 0;
         }
 
             a{
@@ -48,6 +50,14 @@
                 font-family: "Raleway", sans-serif;
                 width:auto;
                 align-self: center;
+
+                @media @phone{
+                    font-size: 2rem;
+                    background-color: lightgrey;
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0;
+                }
 
                 &:hover{
                   font-size: 120%;
@@ -62,9 +72,19 @@
             color: @background-color;
             border-radius: 5px;
             font-size: 1.8rem;
+            font-family: "Raleway", sans-serif;
             width: 100px;
             height: 40px;
             cursor: pointer;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            @media @phone{
+                width: 100%;
+                
+            }
 
             &:hover{
                 font-size: 2.3rem;
@@ -90,6 +110,14 @@ header{
     width:90%;
     height:60vh;        
     background-position: top;
+
+        @media @phone{
+            background-image: url(/assets/spatulas-square.jpg);
+            background-size: cover;
+            width:95%;
+            height: 60vh;
+            background-position: center;
+        }
     
         h1{
             color:@accent-color;
@@ -99,7 +127,7 @@ header{
             text-shadow: 2px 2px @navy;
             text-align: center;
             padding: 5% auto;
-            margin-bottom: 15px;
+            // margin-bottom: 15px;
         }
     }
 }
@@ -114,6 +142,13 @@ header{
         display:flex;
         flex-wrap:wrap;
         justify-content: space-between;
+
+        @media @phone{
+            flex-wrap:none;
+            flex-direction:column;
+            justify-items: center;
+            align-items: center;
+        }
    
         .features-text{
             width: 48%;
@@ -122,9 +157,12 @@ header{
             flex-direction: column;
             justify-content: center;
         
+            @media @phone{
+                width: 85%;
+            }
+
             h2{
                 font-size: 2.5rem;
-                paddding: 2% 0;
             }
             
         
@@ -138,15 +176,30 @@ header{
 
         .features-image{
             width: 48%;
+
+            @media @phone{
+                width:100%;
+                margin: 0 auto;
+            }
             
 
             img{
                 border-radius: 10px;
                 height: 400px;
+
+                @media @phone{
+                 width:90%;  
+                 align-self: center;
+                 align-content: center;  
+                 padding: 0 0 0 20px;
+                }
+               
             }
     }
  }
 }
+
+
 
             
 
