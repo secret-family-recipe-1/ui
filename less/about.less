@@ -1,0 +1,262 @@
+//Mobile Design at 500px
+@phone: ~'( max-width: 500px ) ';
+
+@accent-color: #C73B24;
+@background-color: #EAF4D3;
+@navy: #273043;
+
+.about-us-container{
+    width: 100%;
+    margin: 0 auto;
+    max-width:auto;
+
+    nav{
+        display:flex;
+        justify-content: space-evenly;
+        width: 100%;
+        // border-bottom: dashed 1px black;
+        align-items: center;
+        padding: 2% 0;
+        
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 3%;
+            padding-top: 3%;
+        }
+        
+
+        .links{
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: space-evenly;
+        width:30%;
+        
+        @media @phone{
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+            a{
+                text-decoration: none;
+                color: @accent-color;
+                font-size: 1.8 rem;
+                padding: 0 auto;
+                font-family: "Raleway", sans-serif;
+                width:auto;
+                align-self: center;
+
+                @media @phone{
+                    font-size: 2rem;
+                    background-color: lightgrey;
+                    text-align: center;
+                    width: 100%;
+                    padding: 10px 0;
+                }
+
+                &:hover{
+                  font-size: 120%;
+                  color: darken(@accent-color, 20%);  
+                }
+                
+            }
+        }  
+        
+        .log-in-btn{
+            background: @accent-color;
+            color: @background-color;
+            border-radius: 5px;
+            font-size: 1.8rem;
+            font-family: "Raleway", sans-serif;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+
+            @media @phone{
+                width: 100%;
+                
+            }
+
+            &:hover{
+                font-size: 2.3rem;
+            }
+        }
+
+    }
+
+    header{
+        max-width:100%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+     
+         
+        .pies-background{
+        background-image: url(/assets/brooke-lark-of0pMsWApZE-unsplash.jpg);
+        background-size: cover;
+        width:90%;
+        height:40vh;        
+        background-position: center;
+     
+            @media @phone{
+                background-image: url(/assets/spatulas-square.jpg);
+                background-size: cover;
+                width:95%;
+                height: 60vh;
+                background-position: center;
+            }
+        
+            h1{
+                color:@accent-color;
+                background-color: white;
+                font-family:'Handlee', cursive;
+                font-size: 6rem;
+                text-shadow: 2px 2px @navy;
+                text-align: center;
+                padding: 5% auto;
+                // margin-bottom: 15px;
+            }
+        }
+    }
+
+    .team-members{
+        max-width:800px;
+        width: 100%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px 0;
+        
+        @media @phone{
+            display:flex; 
+            flex-direction:column;
+        }
+        
+        .member-inverse{
+            display:flex;
+            flex-direction: row-reverse;
+            // margin: 60px 0;
+            background-color: @background-color;
+            padding: 4%;
+
+            @media @phone{
+                display:flex; 
+                flex-direction:column-reverse;
+                justify-content: center;
+                margin: 0;
+                padding: 4%;
+            }
+
+            .info-inverse{
+                width:47%;
+                display:flex;
+                flex-direction:column;
+                justify-content: space-between;
+                
+                h2{
+                    font-size: 2.3rem;
+                    text-transform: uppercase;
+                    padding: 2% 0;
+                    color: @accent-color;
+                }
+
+                h3{
+                    font-size: 2rem;
+                    margin:5px 0;
+                }
+
+                p{
+                    width: auto;
+                    font-size: 1.6rem;
+                    line-height: 1.3;
+                    margin: 5px 0;
+                }
+
+                a{
+                    font-size: 1.5rem;
+                    margin: 5px 0;
+                }
+            }
+
+            .team-photo img{
+                border-radius: 50%;
+                border: dotted 5px #C73B24;
+                width:48%;
+            }
+        }
+            
+            
+        .member{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            // margin: 60px 0;    
+            padding: 4%;
+            
+            
+            @media @phone{
+                display:flex; 
+                flex-direction:column-reverse;
+                align-content: center;
+                align-items: center;
+                margin:0;
+                padding:4%;
+            }
+
+            .info{
+                width:47%;
+                display:flex;
+                flex-direction:column;
+                justify-content: space-between;
+    
+
+                h2{
+                    font-size: 2.3rem;
+                    text-transform: uppercase;
+                    padding: 2% 0;
+                    color: @accent-color;
+                }
+
+                h3{
+                    font-size: 2rem;
+                    margin: 5px 0;
+                }
+
+                p{
+                    width: auto;
+                    font-size: 1.6rem;
+                    line-height: 1.3;
+                    margin: 5px 0;
+                }
+
+                a{
+                    font-size: 1.5rem;
+                    margin: 5px 0;
+                }
+            }          
+            
+            .team-photo-move img{
+            border-radius: 50%;
+            border: dotted 5px #C73B24;
+            width:48%;
+            margin-left: 160px;
+
+                @media @phone{
+                    margin: 0;
+                }
+            }
+        } 
+    }
+}
+
+
