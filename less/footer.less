@@ -1,17 +1,40 @@
+//Mobile Design at 500px
+@phone: ~'( max-width: 500px ) ';
+
 .footer {
     width: 100%;
-    height: 70px;
+    height: 100px;
     border-top: 2px dashed black;
     background-color:@background-color;
-    padding:25px auto;
-    
-   .footer-section > p {
-      text-align: center;
-      color: @navy;
-      font-family: "Raleway", sans-serif;
-      font-size: 2rem;
-    //   padding:20px auto;
-    //   background-color: red;
-      margin: 20px auto;
+
+    .footer-section {
+       text-align: center;
+       color: @navy;
+       font-family: "Raleway", sans-serif;
+       font-size: 2rem;
+       display:flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       
+        img{
+            width:60px;
+            height:60px;
+            padding-bottom: 5px;
+            padding-top:0.5%;
+
+            @media @phone{
+                padding-top: 2%;
+            }
+        }
+
+        p {
+            padding-top: 5px;
+
+            @media @phone{
+                font-size: 1.4rem;
+            }
+        }
+        
     }
-  }
+}
