@@ -282,7 +282,8 @@ body {
     width: 85%;
   }
 }
-.container .main-container .features-section .features-text h2 {
+.container .main-container .features-section .features-text .step {
+  margin-bottom: 30px;
   font-size: 2.5rem;
 }
 .container .main-container .features-section .features-text ul li {
@@ -314,8 +315,9 @@ body {
     width: 85%;
   }
 }
-.container .main-container .features-section-inverse .features-text h2 {
+.container .main-container .features-section-inverse .features-text .step {
   font-size: 2.5rem;
+  margin-bottom: 30px;
 }
 .container .main-container .features-section-inverse .features-text ul li {
   padding: 2% 0;
@@ -342,9 +344,6 @@ body {
     width: 90%;
     max-height: 450px;
   }
-}
-.step {
-  margin-bottom: 30px;
 }
 .about-us-container {
   width: 100%;
@@ -481,6 +480,9 @@ body {
   background-color: #EAF4D3;
   padding: 4%;
 }
+.about-us-container .team-members .member-inverse:hover {
+  background-color: #b0d559;
+}
 @media ( max-width: 500px )  {
   .about-us-container .team-members .member-inverse {
     display: flex;
@@ -489,6 +491,9 @@ body {
     justify-content: center;
     margin: 0;
     padding: 4%;
+  }
+  .about-us-container .team-members .member-inverse:hover {
+    background-color: #EAF4D3;
   }
 }
 .about-us-container .team-members .member-inverse .info-inverse {
@@ -540,6 +545,9 @@ body {
   justify-content: space-between;
   padding: 4%;
 }
+.about-us-container .team-members .member:hover {
+  background-color: #eca498;
+}
 @media ( max-width: 500px )  {
   .about-us-container .team-members .member {
     display: flex;
@@ -548,6 +556,9 @@ body {
     align-items: center;
     margin: 0;
     padding: 4%;
+  }
+  .about-us-container .team-members .member:hover {
+    background-color: white;
   }
 }
 .about-us-container .team-members .member .info {

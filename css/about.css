@@ -133,6 +133,9 @@
   background-color: #EAF4D3;
   padding: 4%;
 }
+.about-us-container .team-members .member-inverse:hover {
+  background-color: #b0d559;
+}
 @media ( max-width: 500px )  {
   .about-us-container .team-members .member-inverse {
     display: flex;
@@ -141,6 +144,9 @@
     justify-content: center;
     margin: 0;
     padding: 4%;
+  }
+  .about-us-container .team-members .member-inverse:hover {
+    background-color: #EAF4D3;
   }
 }
 .about-us-container .team-members .member-inverse .info-inverse {
@@ -192,6 +198,9 @@
   justify-content: space-between;
   padding: 4%;
 }
+.about-us-container .team-members .member:hover {
+  background-color: #eca498;
+}
 @media ( max-width: 500px )  {
   .about-us-container .team-members .member {
     display: flex;
@@ -200,6 +209,9 @@
     align-items: center;
     margin: 0;
     padding: 4%;
+  }
+  .about-us-container .team-members .member:hover {
+    background-color: white;
   }
 }
 .about-us-container .team-members .member .info {
