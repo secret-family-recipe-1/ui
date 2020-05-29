@@ -29,12 +29,12 @@
         justify-content: space-evenly;
         width:30%;
         
-        @media @phone{
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            margin: 20px 0;
-        }
+            @media @phone{
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 20px 0;
+            }
 
             a{
                 text-decoration: none;
@@ -57,7 +57,6 @@
                   font-size: 120%;
                   color: darken(@accent-color, 20%);  
                 }
-                
             }
         }  
         
@@ -83,89 +82,125 @@
                 font-size: 2.3rem;
             }
         }
-
     }
 
-header{
-   max-width:100%;
-   margin: 0 auto;
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-    
-    .hero-image{
-    background-image: url(/assets/kitchen-counter.jpeg);
-    background-size: cover;
-    width:90%;
-    height:60vh;        
-    background-position: top;
-
-        @media @phone{
-            background-image: url(/assets/spatulas-square.jpg);
-            background-size: cover;
-            width:95%;
-            height: 60vh;
-            background-position: center;
-        }
-    
-        h1{
-            color:@accent-color;
-            background-color: white;
-            font-family:'Handlee', cursive;
-            font-size: 6rem;
-            text-shadow: 2px 2px @navy;
-            text-align: center;
-            padding: 5% auto;
-            // margin-bottom: 15px;
-        }
-    }
-}
-
-.main-container{
-    max-width:1024px;
-    width:100%;
+    header{
+    max-width:100%;
     margin: 0 auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
-
-    .features-section{
-        margin:30px 0;
-        display:flex;
-        flex-wrap:wrap;
-        justify-content: space-between;
-
-        @media @phone{
-            flex-wrap:none;
-            flex-direction:column;
-            justify-items: center;
-            align-items: center;
-        }
-   
-        .features-text{
-            width: 48%;
-            font-size: 1.8rem;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
+    align-items: center;
         
+        .hero-image{
+        background-image: url(/assets/kitchen-counter.jpeg);
+        background-size: cover;
+        width:90%;
+        height:60vh;        
+        background-position: top;
+
             @media @phone{
-                width: 85%;
+                background-image: url(/assets/spatulas-square.jpg);
+                background-size: cover;
+                width:95%;
+                height: 60vh;
+                background-position: center;
             }
-
-            h2{
-                font-size: 2.5rem;
-            }
-            
-
-            ul{
-                li{
-                    padding: 2% 0;
-                }
+        
+            h1{
+                color:@accent-color;
+                background-color: white;
+                font-family:'Handlee', cursive;
+                font-size: 6rem;
+                text-shadow: 2px 2px @navy;
+                text-align: center;
+                padding: 5% auto;
+                // margin-bottom: 15px;
             }
         }
     }
+
+    .main-container{
+        max-width:1024px;
+        width:100%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .features-section{
+            margin:30px 0;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+
+
+
+            @media @phone{
+                flex-wrap:none;
+                flex-direction:column;
+                justify-items: center;
+                align-items: center;
+            }
+    
+            .features-text{
+                width: 48%;
+                font-size: 1.8rem;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+            
+                @media @phone{
+                    width: 85%;
+                }
+
+                h2{
+                    font-size: 2.5rem;
+                }
+                
+                ul{
+                    li{
+                        padding: 2% 0;
+                    }
+                }
+            }
+        }
+
+        .features-section-inverse{
+            margin:30px 0;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+
+            @media @phone{
+                flex-wrap:none;
+                flex-direction:column-reverse;
+                justify-items: center;
+                align-items: center;
+            }
+    
+            .features-text{
+                width: 48%;
+                font-size: 1.8rem;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+            
+                @media @phone{
+                    width: 85%;
+                }
+
+                h2{
+                    font-size: 2.5rem;
+                }
+                
+                ul{
+                    li{
+                        padding: 2% 0;
+                    }
+                }
+            }            
+        }
 
         .features-image{
             width: 48%;
@@ -179,20 +214,18 @@ header{
                 justify-content: center;
             }
             
-
             img{
                 border-radius: 10px;
                 height: 400px;
                 
-
                 @media @phone{
-                 width:90%; 
-                 max-height:450px;
+                    width:90%; 
+                    max-height:450px;
                 }
-               
+            
             }
+        }
     }
- }
 }
 
 
