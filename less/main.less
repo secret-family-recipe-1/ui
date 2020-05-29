@@ -128,6 +128,14 @@
         flex-direction: column;
         justify-content: center;
 
+        .p-primary{
+            color: @accent-color;
+            font-size: 3rem;
+            text-align: center;
+            margin: 3%;
+            padding-top: 2%;
+        }
+
         .features-section{
             margin:30px 0;
             display:flex;
@@ -227,11 +235,22 @@
             
             }
         }
+
+        a.btn-primary{
+            background-color: @accent-color;
+            color: @background-color;
+            font-size: 1.8rem;
+            padding: 3%;
+            margin: 2%;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+       
+            &:hover{
+                font-size: 2.2rem;
+            }
+        }
     }
 }
 
-
-
-            
-
-// Nest this properly when opportunity allows!

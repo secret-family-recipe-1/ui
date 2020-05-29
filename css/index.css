@@ -256,6 +256,13 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+.container .main-container .p-primary {
+  color: #C73B24;
+  font-size: 3rem;
+  text-align: center;
+  margin: 3%;
+  padding-top: 2%;
+}
 .container .main-container .features-section {
   margin: 30px 0;
   display: flex;
@@ -344,6 +351,20 @@ body {
     width: 90%;
     max-height: 450px;
   }
+}
+.container .main-container a.btn-primary {
+  background-color: #C73B24;
+  color: #EAF4D3;
+  font-size: 1.8rem;
+  padding: 3%;
+  margin: 2%;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .main-container a.btn-primary:hover {
+  font-size: 2.2rem;
 }
 .about-us-container {
   width: 100%;
@@ -639,6 +660,49 @@ body {
   .about-us-container .footer .footer-section p {
     font-size: 1.4rem;
   }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: auto;
+}
+.container .contact-form {
+  height: 500px;
+  width: 94%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #C73B24;
+  padding: 3%;
+  margin: 3% 6%;
+  margin-left: 4%;
+}
+.container .contact-form h1 {
+  color: #EAF4D3;
+  font-size: 3rem;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.container .contact-form .email {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  font-size: 2rem;
+  background-color: #EAF4D3;
+  padding: 2%;
+}
+.container .contact-form .call {
+  width: 70%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-start;
+  font-size: 2rem;
+  background-color: #EAF4D3;
+  padding: 2%;
 }
 .footer {
   width: 100%;
