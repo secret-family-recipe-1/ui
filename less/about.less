@@ -14,7 +14,6 @@
         display:flex;
         justify-content: space-evenly;
         width: 100%;
-        // border-bottom: dashed 1px black;
         align-items: center;
         padding: 2% 0;
         
@@ -25,19 +24,18 @@
             padding-top: 3%;
         }
         
-
         .links{
         font-size: 1.8rem;
         display: flex;
         justify-content: space-evenly;
         width:30%;
         
-        @media @phone{
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            margin: 20px 0;
-        }
+            @media @phone{
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin: 20px 0;
+            }
 
             a{
                 text-decoration: none;
@@ -59,8 +57,7 @@
                 &:hover{
                   font-size: 120%;
                   color: darken(@accent-color, 20%);  
-                }
-                
+                } 
             }
         }  
         
@@ -87,7 +84,6 @@
                 font-size: 2.3rem;
             }
         }
-
     }
 
     header{
@@ -97,23 +93,21 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     
-     
          
         .pies-background{
-        background-image: url(/assets/brooke-lark-of0pMsWApZE-unsplash.jpg);
-        background-size: cover;
-        width:90%;
-        height:40vh;        
-        background-position: center;
-     
-            @media @phone{
-                background-image: url(/assets/spatulas-square.jpg);
-                background-size: cover;
-                width:95%;
-                height: 60vh;
-                background-position: center;
-            }
+            background-image: url(/assets/brooke-lark-of0pMsWApZE-unsplash.jpg);
+            background-size: cover;
+            width:90%;
+            height:40vh;        
+            background-position: center;
+        
+                @media @phone{
+                    background-image: url(/assets/spatulas-square.jpg);
+                    background-size: cover;
+                    width:95%;
+                    height: 60vh;
+                    background-position: center;
+                }
         
             h1{
                 color:@accent-color;
@@ -123,7 +117,6 @@
                 text-shadow: 2px 2px @navy;
                 text-align: center;
                 padding: 5% auto;
-                // margin-bottom: 15px;
             }
         }
     }
@@ -140,6 +133,9 @@
         @media @phone{
             display:flex; 
             flex-direction:column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
         }
         
         .member-inverse{
@@ -152,6 +148,8 @@
             @media @phone{
                 display:flex; 
                 flex-direction:column-reverse;
+                // justify-content: center;
+                align-items: center;
                 justify-content: center;
                 margin: 0;
                 padding: 4%;
@@ -162,6 +160,12 @@
                 display:flex;
                 flex-direction:column;
                 justify-content: space-between;
+
+                @media @phone{
+                    width: 100%;
+                    padding:2%;
+                    align-items: center;
+                }
                 
                 h2{
                     font-size: 2.3rem;
@@ -188,19 +192,23 @@
                 }
             }
 
-            .team-photo img{
+            .team-photo{
+                img{
                 border-radius: 50%;
                 border: dotted 5px #C73B24;
                 width:48%;
+
+                    @media @phone{
+                    margin-left: 105px;   
+                    }
+                }
             }
-        }
-            
+        }        
             
         .member{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            // margin: 60px 0;    
+            justify-content: space-between;  
             padding: 4%;
             
             
@@ -218,7 +226,12 @@
                 display:flex;
                 flex-direction:column;
                 justify-content: space-between;
-    
+
+                @media @phone{
+                    width: 100%;
+                    padding:2%;
+                    align-items: center;
+                }
 
                 h2{
                     font-size: 2.3rem;
@@ -245,18 +258,55 @@
                 }
             }          
             
-            .team-photo-move img{
-            border-radius: 50%;
-            border: dotted 5px #C73B24;
-            width:48%;
-            margin-left: 160px;
+            .team-photo-move{
+                img{
+                    border-radius: 50%;
+                    border: dotted 5px #C73B24;
+                    width:48%;
+                    margin-left: 160px;
 
-                @media @phone{
-                    margin: 0;
-                }
+                    @media @phone{
+                        margin-left: 105px;
+                    }
+                } 
             }
         } 
     }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        border-top: 2px dashed black;
+        background-color:@background-color;
+    
+        .footer-section{
+           text-align: center;
+           color: @navy;
+           font-family: "Raleway", sans-serif;
+           font-size: 2rem;
+           display:flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           
+            img{
+                width:60px;
+                height:60px;
+                padding-bottom: 5px;
+                padding-top:0.5%;
+    
+                @media @phone{
+                    padding-top: 2%;
+                }
+            }
+    
+            p {
+                padding-top: 5px;
+    
+                @media @phone{
+                    font-size: 1.4rem;
+                }
+            } 
+        }
+    }
 }
-
-

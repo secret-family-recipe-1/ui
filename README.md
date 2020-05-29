@@ -7,7 +7,7 @@
 - Marta Krawczyk, React I
 - Drake Alia, React II
 - Corbin Robb, React II
-- Cole Wilkison, Backend Node
+- Cole Wilkison, Back End Node
 - Zac Smith, Project Lead
 
 ## COLORS

@@ -1,3 +1,4 @@
+@tablet ( max-width: 800px );
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -251,6 +252,9 @@ body {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container .main-container .features-section {
   margin: 30px 0;
@@ -284,13 +288,49 @@ body {
 .container .main-container .features-section .features-text ul li {
   padding: 2% 0;
 }
+.container .main-container .features-section-inverse {
+  margin: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media ( max-width: 500px )  {
+  .container .main-container .features-section-inverse {
+    flex-wrap: none;
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items: center;
+  }
+}
+.container .main-container .features-section-inverse .features-text {
+  width: 48%;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media ( max-width: 500px )  {
+  .container .main-container .features-section-inverse .features-text {
+    width: 85%;
+  }
+}
+.container .main-container .features-section-inverse .features-text h2 {
+  font-size: 2.5rem;
+}
+.container .main-container .features-section-inverse .features-text ul li {
+  padding: 2% 0;
+}
 .container .main-container .features-image {
   width: 48%;
 }
 @media ( max-width: 500px )  {
   .container .main-container .features-image {
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .container .main-container .features-image img {
@@ -300,9 +340,7 @@ body {
 @media ( max-width: 500px )  {
   .container .main-container .features-image img {
     width: 90%;
-    align-self: center;
-    align-content: center;
-    padding: 0 0 0 20px;
+    max-height: 450px;
   }
 }
 .step {
@@ -432,6 +470,9 @@ body {
   .about-us-container .team-members {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 }
 .about-us-container .team-members .member-inverse {
@@ -444,6 +485,7 @@ body {
   .about-us-container .team-members .member-inverse {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     justify-content: center;
     margin: 0;
     padding: 4%;
@@ -454,6 +496,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media ( max-width: 500px )  {
+  .about-us-container .team-members .member-inverse .info-inverse {
+    width: 100%;
+    padding: 2%;
+    align-items: center;
+  }
 }
 .about-us-container .team-members .member-inverse .info-inverse h2 {
   font-size: 2.3rem;
@@ -480,6 +529,11 @@ body {
   border: dotted 5px #C73B24;
   width: 48%;
 }
+@media ( max-width: 500px )  {
+  .about-us-container .team-members .member-inverse .team-photo img {
+    margin-left: 105px;
+  }
+}
 .about-us-container .team-members .member {
   display: flex;
   flex-direction: row;
@@ -501,6 +555,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media ( max-width: 500px )  {
+  .about-us-container .team-members .member .info {
+    width: 100%;
+    padding: 2%;
+    align-items: center;
+  }
 }
 .about-us-container .team-members .member .info h2 {
   font-size: 2.3rem;
@@ -530,20 +591,76 @@ body {
 }
 @media ( max-width: 500px )  {
   .about-us-container .team-members .member .team-photo-move img {
-    margin: 0;
+    margin-left: 105px;
   }
 }
-.footer {
+.about-us-container .footer {
   width: 100%;
-  height: 70px;
+  height: 100px;
   border-top: 2px dashed black;
   background-color: #EAF4D3;
-  padding: 25px auto;
 }
-.footer .footer-section > p {
+.about-us-container .footer .footer-section {
   text-align: center;
   color: #273043;
   font-family: "Raleway", sans-serif;
   font-size: 2rem;
-  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-us-container .footer .footer-section img {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 5px;
+  padding-top: 0.5%;
+}
+@media ( max-width: 500px )  {
+  .about-us-container .footer .footer-section img {
+    padding-top: 2%;
+  }
+}
+.about-us-container .footer .footer-section p {
+  padding-top: 5px;
+}
+@media ( max-width: 500px )  {
+  .about-us-container .footer .footer-section p {
+    font-size: 1.4rem;
+  }
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  border-top: 2px dashed black;
+  background-color: #EAF4D3;
+}
+.footer .footer-section {
+  text-align: center;
+  color: #273043;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer-section img {
+  width: 60px;
+  height: 60px;
+  padding-bottom: 5px;
+  padding-top: 0.5%;
+}
+@media ( max-width: 500px )  {
+  .footer .footer-section img {
+    padding-top: 2%;
+  }
+}
+.footer .footer-section p {
+  padding-top: 5px;
+}
+@media ( max-width: 500px )  {
+  .footer .footer-section p {
+    font-size: 1.4rem;
+  }
 }
